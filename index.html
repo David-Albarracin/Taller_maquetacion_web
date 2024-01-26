@@ -9,34 +9,93 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <a href="/" class="nav-logo">
-                Foods
-            </a>
-            <ul class="nav-menu">
-                <li></li>
-            </ul>
-            <button class="mobile nav-button">
-                <i class='bx bx-menu'></i>
-            </button>
-        </nav>
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav-logo">
+                    Foods
+                </a>
+                <ul class="nav-menu desktop">
+                    <li class="nav-link">
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#menu">
+                            Menu
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#service">
+                            Service
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="toggle-container mobile">
+                    <input type="checkbox" class="toggle-checkbox" id="toggle">
+                    <label for="toggle" class="toggle-label">
+                        <i class="open bx bx-menu"></i>
+                        <i class='close bx bx-x'></i>
+                        <ul class="nav-menu__mobile close text-align-center">
+                            <li class="nav-link">
+                                <a href="#home">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#about">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#menu">
+                                    Menu
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#service">
+                                    Service
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#contact">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </label>
+                  </div>
+            </nav>
+        </div>
     </header>
+
     <main class="main">
-        
-        <section class="section">
+        <section id="home" class="section">
             <div class="container">
-                <div class="d-grid">
-                    <div class="home-text">
-                        <h1 class="section-title">
-                            Full Website
-                        </h1>
-                        <h4>
-                            Foods the
-                            Most precious thing
-                        </h4>
-                        <button class="button">
-                            Today's Menu
-                        </button>
+                <div class="d-grid col-lg-6">
+                    <div class="align-center ">
+                        <div class="home-text">
+                            <h1 class="section-title">
+                                Full Website
+                            </h1>
+                            <h4>
+                                Foods the
+                                Most precious thing
+                            </h4>
+                            <button class="button">
+                                Today's Menu
+                            </button>
+                        </div>
                     </div>
                     <div class="text-align-center home-image">
                         <div class="p-4">
@@ -47,28 +106,30 @@
             </div>
         </section>
 
-        <section class="section">
+        <section id="about" class="section">
             <div class="container">
-                <div class="d-grid">
-                    <div class="about-text">
-                        <h1 class="section-subtitle">
-                            About Us
-                        </h1>
-                        <h2>
-                            We speak the good
-                            food language
-                        </h2>
-                        <p>
-                            It is a long established fact that a 
-                            be distracted by the readable content 
-                            looking at its layout. The point of
-                        </p>
-                        <button class="button">
-                            Learn More
-                        </button>
-
+                <div class="d-grid col-lg-6">
+                    <div class="align-center order-1">
+                        <div class="about-text">
+                            <h1 class="section-subtitle">
+                                About Us
+                            </h1>
+                            <h2>
+                                We speak the good
+                                food language
+                            </h2>
+                            <p>
+                                It is a long established fact that a 
+                                be distracted by the readable content 
+                                looking at its layout. The point of
+                            </p>
+                            <button class="button">
+                                Learn More
+                            </button>
+    
+                        </div>
                     </div>
-                    <div class="text-align-center about-image">
+                    <div class="text-align-center about-image ">
                         <div class="p-4">
                             <img class="about-img" src="./img/about.png" alt="about image">
                         </div>
@@ -78,7 +139,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section id="menu" class="section">
             <div class="container">
                 <div class="d-grid">
                     <div class="text-align-center">
@@ -89,7 +150,8 @@
                             Fresh taste and grat price
                         </h2>
                     </div>
-                    <div class="menu-products">
+                    <div class="d-grid col-lg-4 gap-2">
+
                         <div class="product">
                             <div class="product-container">
                                 <div class="product-header">
@@ -105,13 +167,45 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="product">
+                            <div class="product-container">
+                                <div class="product-header">
+                                    <img class="product-img" src="./img/food2.png" alt="foot 1">
+                                    <button class="button product-button">
+                                        <i class='bx bx-cart-download' ></i>
+                                    </button>
+                                </div>
+                                <div class="product-body">
+                                    <h2 class="product-title">Special Beef Burger</h2>
+                                    <h5 class="product-tag">Tasty Food</h5>
+                                    <h4 class="product-price">$11.00</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product-container">
+                                <div class="product-header">
+                                    <img class="product-img" src="./img/food3.png" alt="foot 1">
+                                    <button class="button product-button">
+                                        <i class='bx bx-cart-download' ></i>
+                                    </button>
+                                </div>
+                                <div class="product-body">
+                                    <h2 class="product-title">Chicken Fry Pack</h2>
+                                    <h5 class="product-tag">Tasty Food</h5>
+                                    <h4 class="product-price">$11.00</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
             </div>
         </section>
 
-        <section class="section">
+        <section id="service" class="section">
             <div class="container">
                 <div class="d-grid">
                     <div class="text-align-center">
@@ -123,11 +217,39 @@
                             food services
                         </h2>
                     </div>
-                    <div class="services">
+                    <div class="d-grid col-lg-4 gap-2">
                         <div class="service">
                             <div class="service-container">
                                 <img src="./img/s1.png" alt="service 1" class="service-img">
                                 <h2 class="service-title">Order</h2>
+                                <div class="service-description">
+                                    <p>
+                                        It is a long established  
+                                        be distracted by the readable 
+                                        looking at its layout. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service">
+                            <div class="service-container">
+                                <img src="./img/s2.png" alt="service 1" class="service-img">
+                                <h2 class="service-title">Shipping</h2>
+                                <div class="service-description">
+                                    <p>
+                                        It is a long established  
+                                        be distracted by the readable 
+                                        looking at its layout. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service">
+                            <div class="service-container">
+                                <img src="./img/s3.png" alt="service 1" class="service-img">
+                                <h2 class="service-title">Dellvered</h2>
                                 <div class="service-description">
                                     <p>
                                         It is a long established  
@@ -162,8 +284,133 @@
         </section>
         
     </main>
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="container">
+            <div class="d-grid col-lg-3">
+                <div class="footer-section">
+                    <div class="position-relative">
+                        <h3 class="footer-section__title">
+                            Menu Links
+                        </h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Menu
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Service
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <div class="position-relative">
+                        <h3 class="footer-section__title">
+                            Our Servive
+                        </h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Web Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Web Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Marketing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Product Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Graphic Design
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <div class="position-relative">
+                        <h3 class="footer-section__title">
+                            Information
+                        </h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Delivery Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section text-align-center">
+                    <div class="position-relative">
+                        <h3 class="footer-section__title">
+                            Contact Us
+                        </h3>
+                    </div>
+                    <div class="social-medias">
+                        <div class="d-flex">
+                            <a href="" class="social-media">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="" class="social-media">
+                                <i class='bx bxl-instagram' ></i>
+                            </a>
+                            <a href="" class="social-media">
+                                <i class='bx bxl-twitter' ></i>
+                            </a>
+                            <a href="" class="social-media">
+                                <i class='bx bxl-youtube' ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </footer>
